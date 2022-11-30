@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-- Main + tło + nav --*/
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  position: relative;
+}
+
+nav li {
+  display: inline-block;
+  padding: 40px 30px;
+}
+
+nav li a {
+  color: white;
+  transition: color 0.5s;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav li a:hover {
+  color: #0099FF !important;
+}
+
+.first-bg {
+  background: url("auta/bmw/mg6.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 740px;
+  width: 100%;
+}
+
+.overley {
+  width: 100%;
+  height: 740px;
+  position: absolute;
+  top: 0px;
+  transition: background-color 1.2s;
+}
+
+.first-bg:hover .overley {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.first-bg:hover nav li a {
+  color: rgba(255, 255, 255, .2);
+}
+.ovdiv1{
+  width: 100%;
+  height: 100px;
+}
+.ovdiv2{
+  width: 100%;
+  height: 640px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+}
+.ovdiv2 a{
+  margin-top: 200px;
+}
+.ovdiv2:hover{
+  width: 100%;
+  height: 640px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 1;
+  transition:1.2s;
+}
+.ovdiv2 a:hover{
+  margin-top: 200px;
+}
+.ov-text{
+  margin-top: 220px;
+}
+.ov-button{
+  margin-top: 290px;
+  margin-left: -138px;
+}
+.button-first{
+  border: solid 3px white;
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+.button-first:hover{
+  background-color: white;
+  color: #1f1f1f;
+  border: solid 3px white;
+}
+.hr{
+  height: 10px;
+}
+.as {
+  width: 200px;
+}
+
+/*-- Koniec Maina --*/
+
+/*-- Tekst pod mainem  --*/
+
+.main-text{
+  width: 100%;
+  height: 200px;
+  background: #1F1F1F;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.text{
+  position: relative;
+  top: 70px;
+  font-size:21px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.text a {
+  text-align: center;
+}
+
+
+/*-- Koniec tekstu pod mainem --*/
+
+/*-- Wyszukiwarka--*/
+
+.form{
+  height: 180px;
+}
+.form-title{
+  text-align: center;
+  margin-top: 60px;
+}
+.form-title a{
+  font-size: 25px;
+}
+.form-text{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.red{
+  margin: 0 30px;
+  color: #0099FF;
+}
+.form-action{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+}
+.form-action a{
+  font-size: 20px;
+  margin: 0 30px;
+}
+.form-action form select {
+  border: solid 2px white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid 2px white;
+}
+.input-data{
+  border: solid 2px white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid 2px white;
+}
+.button-submit{
+  border: solid 2px white;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: white;
+}
+.button-submit:hover{
+  background-color: #E6E6E6;
+  color: #1f1f1f;
+}
+.form-border{
+  background-color: #1f1f1f;
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 80px;
+} 
+form{
+  width: 90%;
+}
+
+/*-- Koniec Formularza --*/
+
+.break-img{
+  width: 100%;
+  height: 700px ;
+  background-image: url("auta/bmw/lambo3.jpg");
+  background-size: cover;
+}
+
+
+
+
+/*-- Początek blue baru --*/
+
+
+
+.bar-red{
+  width: 100%;
+  height: 180px;
+  background-color: #1f1f1f;
+  margin: auto;
+}
+.bar-title{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  color: white;
+}
+.bar-text{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+.special-ofert{
+  width: 100%;
+  height: 100px;
+}
+.special-ofert-text{
+  margin-top: 30px;
+  margin-left: 5%;
+  font-size: 25px;
+  color: #1f1f1f;
+}
+.form-change-text{
+  color: white;
+}
+
+
+/*-- Koniec blue baru --*/
+
+/* --Specjalna oferta-- */
+
+
+.ofert{
+  width: 100%;
+  height: 750px;
+}
+.ofert-box{
+  display: flex;
+  justify-content: space-around;
+
+}
+.media-ofert{
+  width: 420px;
+  height: 560px;
+  background-color:#F1F1F1;
+  margin: auto;
+}
+
+.ofert-name{
+  text-align: center;
+  font-size: 22px;
+  padding: 5px;
+}
+.ofert-price{
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  text-decoration: line-through;
+}
+.ofert-rabat{
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  color: red;
+}
+.ofert-button{
+  text-align: center;
+}
+
+.ofert-img{
+  width: 380px;
+  height: 360px;
+  margin: 20px auto;
+
+}
+.ofert-button{
+  border: solid 2px #0099ff;
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  font-size: 18px;
+
+}
+.ofert-button:hover{
+  background-color: #0099FF;
+  color: white;
+}
+.BMW-M2-CS{
+  background-image: url("auta/bmw/BMWM2.jpg");
+  background-size: cover;
+}
+.AUDI-RS5{
+  background-image: url("auta/bmw/AUDIRS7.jpg");
+  background-size: cover;
+}
+
+.Porsche
+{
+  background-image: url("auta/bmw/bmw4.jpg");
+  background-size: cover;
+}
+
+
+/* --Koniec specjalnej oferta-- */
+
+.crash{
+  width: 100%;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+}
+.crash-img{
+  background-image: url("auta/bmw/crash.jpg");
+  width: 350px;
+  height: 320px;
+  background-size: cover;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+.crash-text{
+  width: 650px;
+  height: 500px;
+  background-color: #1f1f1f;
+  position: relative;
+  left: -50px;
+}
+.crash-title{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  color: white;
+}
+.crash-font{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+
+
+.green-bar{
+  width: 100%;
+  height: 150px;
+  background-color: #1f1f1f;
+}
+.green-bar-text{
+  padding-top: 62px;
+}
+.green-bar-text p{
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+
+/*-- Koniec-green-bara -- */
+/*-- Mapa -- */
+
+.map-title{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.map{
+  margin-left: 2%;
+}
+.map-text{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.map-text:hover{
+  text-decoration: underline;
+}
+.map-adres{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.map-faq{
+  display: flex;
+  justify-content: space-around;
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+}
+.a{
+  margin: 20px 0px;
+}
+.none{
+  width: 100%;
+  height: 150px;
+}
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: #1f1f1f;
+}
+
+.sociale{
+  padding: 30px 30px;
+  width: 200px;
+}
+.footer-sociale-text{
+  font-size: 18px;
+  color: white;
+  padding: 30px;
+}
+.sociale-img{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.firma-a{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+ nav li {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+.ofert-box{
+  display: flex;
+  flex-direction: column;
+} 
+.ofert{
+  width: 100%;
+  height: 1800px;
+}
+.crash-text{
+  width: 3000px;
+  height: 500px;
+  background-color: #1f1f1f;
+  margin: 0 20px;
+}
+.crash-img{
+  background-image:   none;
+}
+.crash{
+  width: 100%;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+}
+.crash-title{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 23px;
+  color: white;
+}
+.crash-font{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  color: white;
+}
+
+.map-faq{
+  display: flex;
+  flex-direction: column;
+}
+.green-bar{
+  width: 100%;
+  height: 200px;
+  background-color: #1f1f1f;
+}
+}
